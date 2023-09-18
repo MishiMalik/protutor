@@ -1,0 +1,66 @@
+
+@media only screen and (min-width: 1200px) and (max-width:1600px){
+    .container{
+        max-width: 92% !important;
+        margin: 0px auto;
+    }
+}
+@media only screen and (min-width: 1600px){
+    .main-btn-blank {
+        padding: 16px 35px;
+      }
+      .main-btn{
+      padding: 16px 35px;
+      }
+}
+@media only screen and (max-width: 1300px){
+      .main-heading{
+        color: #FFF;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    }
+}
+@media only screen and (max-width: 1200px){
+    .main-btn-blank {
+        padding: 10px 20px;
+      }
+      .main-btn{
+      padding: 10px 25px;
+      }
+      .top-navbar li {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .main-heading br{
+        display: none;
+    }
+    .hero-section{
+        min-height: 100vh;
+        padding-top: 70px;
+    }
+    .statistics{
+     padding:30px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-heading{
+        font-size: 30px;
+    }
+    .main-btn2{
+       min-width: 100px;
+    }
+    .main-btn-blank2{
+        min-width: 100px;
+     }
+     .main-text{
+        font-size: 14px;
+        line-height:normal;
+     }
+     .statistics{
+        padding:15px;
+       }
+}
