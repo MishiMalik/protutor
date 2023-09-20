@@ -26,6 +26,14 @@ body {
   font-weight: 400;
   line-height: 32px; /* 177.778% */
 }
+.main-tex2 {
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
 .heading {
   color: #2c2c2c;
   text-align: center;
@@ -111,7 +119,6 @@ body {
 .main-btn-blank {
   display: flex;
   padding: 14px 30px;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -128,9 +135,16 @@ body {
   border: 1px solid #ff6c0b;
   white-space: nowrap;
 }
+.main-btn-blank svg{
+  stroke: var(--primary) !important;
+}
 .main-btn-blank:hover {
   background-color: #ff6c0b;
   color: white;
+
+}
+.main-btn-blank:hover svg{
+  stroke: white !important;
 }
 .main-btn {
   display: flex;
@@ -208,10 +222,9 @@ body {
   width: 60px;
   height: 60px;
 }
-.statistics-card h1 {
+.statistics-card h3{
   color: #2c2c2c;
-  font-family: Cabin;
-  font-size: 32px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 36px; /* 112.5% */
@@ -329,4 +342,168 @@ line-height: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+}
+
+
+/* ======================================================================comfort */
+.comfort-zone{
+  padding: 100px 0px;
+  background: #FFF9F5;
+}
+.comfort-card{
+  border-radius: 6px;
+border: 1px solid rgba(255, 108, 11, 0.50);
+background: #FFF;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100%;
+text-align: center;
+}
+.comfort-card img{
+  margin-bottom: 15px;
+}
+.comfort-card h3{
+  color: #2C2C2C;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 125% */
+}
+
+.comfort-card p{
+  color: rgba(44, 44, 44, 0.80) !important;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+opacity: 0.8;
+}
+/* ===============================================================================protutor work */
+.work{
+  padding: 100px 0;
+}
+.work-card{
+  border-radius: 6px;
+border: 1px solid rgba(255, 108, 11, 0.20);
+background: #FFFCFA;
+box-shadow: 10px 10px 35px 0px rgba(122, 134, 136, 0.15);
+display: flex;
+align-items: center;
+}
+.work-card h3{
+  color: #2C2C2C;
+font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 107.143% */
+}
+
+.work-card p{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.work-text{
+  padding: 0px 50px;
+}
+/* ==================================================================tutors */
+.tutors{
+  padding: 100px 0px;
+  background-color: #FFF9F5;
+}
+.tutors-card{
+  border-radius: 0px 0px 4px 4px;
+border: 1px solid #FFF;
+box-shadow: 0px 9.09575px 26.68085px 0px rgba(18, 59, 121, 0.07);
+}
+.tutors-card--text{
+  padding: 15px;
+  background-color: white;
+}
+.tutors-card--text h3{
+  color: #2C2C2C;
+font-feature-settings: 'ss03' on, 'ss01' on;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 133.333% */
+}
+
+.tutors-card--text h4{
+  color: var(--Primary, #FF6C0B);
+  font-feature-settings: 'ss03' on, 'ss01' on;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+}
+
+
+.tutors-card--text p{
+  color: rgba(44, 44, 44, 0.80);
+  font-feature-settings: 'ss03' on, 'ss01' on;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.553px; /* 121.277% */
+}
+.tutors-card img{
+  width: 100%;
+}
+.flag-img{
+  width: 20px !important;
+height: 15px;
+}
+.lesson-numbers{
+  padding-left: 10px;
+  position: relative;
+}
+.lesson-numbers::before{
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 5px;
+  width: 5px;
+  background-color: rgba(44, 44, 44, 0.80)  ;
+  border-radius: 100%;
+}
+
+/* ==========================================================tsetimonials */
+.testimonials{
+  padding: 100px 0px;
+}
+.testimonial-text{
+  color: rgba(44, 44, 44, 0.80);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 146.154% */
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;  
+overflow: hidden;
+position: relative;
+}
+
+.testimonial-text img{
+  position: absolute;
+  top: -5px;
+  left: 0px;
 }
