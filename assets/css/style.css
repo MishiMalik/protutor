@@ -53,6 +53,7 @@ body {
   left: 0;
   right: 0;
   transition: all 0.5s;
+  z-index: 30 !important;
 }
 .top-navbar li {
   margin-left: 17px;
