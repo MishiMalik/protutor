@@ -78,9 +78,11 @@
   .heading br {
     display: none;
   }
-.navbar-collapse {
-  background-color: rgba(55, 31, 85, 0.896) !important;
-}
+
+  .navbar-collapse {
+    background-color: rgba(55, 31, 85, 0.896) !important;
+  }
+
   /* .carousel-control-prev  {
         width: 43vw;
       } */
@@ -134,19 +136,24 @@
     padding: 20px;
   }
 
+  .header-form {
+    padding: 20px 15px;
+  }
 }
 
 @media only screen and (max-width:600px) {
-.card-body{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-  .faq-accordian .accordion-button{
+  .card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .faq-accordian .accordion-button {
     padding: 20px 0px !important;
-   
-  font-size: 15px;
+
+    font-size: 15px;
 
   }
+
   .testimonials,
   .tutors,
   .work,

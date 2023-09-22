@@ -773,3 +773,158 @@ text-decoration: none;
 font-weight: 400;
 line-height: 32px; /* 177.778% */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------become a tutor */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* =====================================================================hero section */
+.hero-section {
+  background-image: url("../images/become-tutor.png");
+  min-height: 100vh;
+  padding-top: 150px;
+  background-size: cover;
+  background-position: right;
+  padding-bottom: 70px;
+}
+.hero-list{
+  list-style: none !important;
+  padding-left: 0px !important;
+}
+.hero-list li{
+margin-bottom: 10px;
+}
+.header-form{
+  border-radius: 10px;
+border: 2px solid rgba(255, 255, 255, 0.28);
+background: rgba(245, 245, 255, 0.60);
+box-shadow: 0px 30px 104px 0px rgba(35, 40, 105, 0.10);
+backdrop-filter: blur(11.164828300476074px);
+padding: 20px 36px;
+width: 100%;
+}
+.header-form h3{
+  color: var(--f, #2C2C2C);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; /* 141.667% */
+}
+
+.header-form p{
+  color: rgba(44, 44, 44, 0.80);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.header-form label{
+  color: var(--f, #2C2C2C);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+margin-bottom: 3px;
+}
+.header-form input{
+  border-radius: 6px;
+border: 1px solid #C7C7C7;
+background: rgba(255, 255, 255, 0.20);
+padding: 0px 16px;
+color: rgba(44, 44, 44, 0.30);
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+height: 54px;
+width: 100%;
+}
+.password{
+  position: relative;
+}
+.password i{
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+  font-size: 17px;
+}
+.header-form button{
+padding: 14px 35px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #FFF;
+text-align: right;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+border-radius: 6px;
+background: var(--Primary, #FF6C0B);
+border: 2px solid #FF6C0B;
+width: 100%;
+}
+
+.header-line{
+  width: 100%;
+  border: 1px solid  #C5C5C5;
+  position: relative;
+  z-index: 1;
+}
+.header-form h4{
+  color: rgba(44, 44, 44, 0.50);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+margin-top: -30px;
+padding: 0px 10px;
+background-color: #A6A5A3;
+width: fit-content;
+text-align: center;
+position: relative;
+z-index: 3;
+}
+.form-footer{
+  color: rgba(44, 44, 44, 0.80);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.form-footer a{
+  color: var(--Primary, #FF6C0B);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+text-decoration: none;
+}
