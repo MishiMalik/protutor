@@ -36,3 +36,68 @@ $(document).ready(function() {
     });
 });
 
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    // Function to handle dropdown button text updates
+    function setupDropdown(dropdownId) {
+      var dropdownMenu = $('#' + dropdownId + ' + ul.dropdown-menu');
+      dropdownMenu.find('a.dropdown-item').click(function(event) {
+        // Prevent the default action (e.g., following the href)
+        event.preventDefault();
+        
+        // Update the button text with the selected item's text
+        var selectedItemText = $(this).text();
+        $('#' + dropdownId).text(selectedItemText);
+      });
+    }
+  
+    // Set up each dropdown
+    setupDropdown('languageDropdown');
+    setupDropdown('priceDropdown');
+    setupDropdown('countryDropdown');
+    setupDropdown('availabilityDropdown');
+    setupDropdown('btn-1');
+    setupDropdown('lan-curr');
+    setupDropdown('drop-btn-1');
+    setupDropdown('drop-btn-2');
+    setupDropdown('drop-btn-3');
+    setupDropdown('drop-btn-4');
+  });
+  
+  
+  const faqs = document.querySelectorAll(".faq");
+  
+  faqs.forEach((faq) => {
+    const question = faq.querySelector(".question"); // Select the question div
+    const h3 = question.querySelector("h3"); // Select the h3 element within the question div
+    const answer = faq.querySelector(".answer");
+    let isH3Black = false;
+  
+    question.addEventListener("click", () => {
+      faq.classList.toggle("active");
+  
+      // Toggle the color of the h3 element
+      if (isH3Black) {
+        h3.style.color = "#2c2c2ccc"; // Change the color back to #FF6C0B
+      } else {
+        h3.style.color = "#FF6C0B";  // Change the color to black
+      }
+  
+      isH3Black = !isH3Black; // Toggle the color state
+  
+      // Toggle the answer visibility
+      if (faq.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+  
