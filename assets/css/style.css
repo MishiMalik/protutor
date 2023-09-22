@@ -234,7 +234,7 @@ body {
 /* =====================================================================hero section */
 .hero-section {
   background-image: url("../images/BG.png");
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 150px;
   background-size: cover;
   background-position: right;
@@ -793,7 +793,7 @@ line-height: 32px; /* 177.778% */
 /* =====================================================================hero section */
 .hero-section {
   background-image: url("../images/become-tutor.png");
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 150px;
   background-size: cover;
   background-position: right;
@@ -927,4 +927,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px;
 text-decoration: none;
+}
+.main-text2{
+  color: var(--f, #2C2C2C);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 200% */
 }
