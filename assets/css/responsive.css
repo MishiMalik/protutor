@@ -78,7 +78,9 @@
   .heading br {
     display: none;
   }
-
+.navbar-collapse {
+  background-color: rgba(55, 31, 85, 0.896) !important;
+}
   /* .carousel-control-prev  {
         width: 43vw;
       } */
