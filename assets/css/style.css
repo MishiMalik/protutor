@@ -502,12 +502,22 @@ line-height: 32px;
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #FFF;
   box-shadow: 0px 9.09575px 26.68085px 0px rgba(18, 59, 121, 0.07);
+  display: flex;
+  flex-direction: column;
 }
 
 .tutors-card--text {
   padding: 15px;
   background-color: white;
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
+.mt-auto{
+  margin-top: auto !important;
+}
+
 
 .tutors-card--text h3 {
   color: #2C2C2C;
@@ -963,6 +973,7 @@ line-height: 32px; /* 200% */
   left: 0;
   right: 0;
   height: 500px;
+  z-index: -1;
 }
 .hero-section-profile {
   /* min-height: 100vh; */
@@ -972,4 +983,62 @@ line-height: 32px; /* 200% */
   padding-bottom: 70px;
   background: linear-gradient(180deg, #FFF9F5 0%, rgba(255, 249, 245, 0.00) 100%);
   position: relative;
+}
+.profile-data{
+  display: flex;
+  align-items: center;
+
+}
+.profile-data .profile-image{
+  position: relative;
+  width: 140px;
+height: 160px;
+flex-shrink: 0;
+}
+.profile-data .profile-image img{
+ height: 100%;
+ width: auto;
+ object-fit: cover;
+ border-radius: 4px;
+}
+.profile-data .profile-content h3{
+  color: var(--f, #2C2C2C);
+  font-feature-settings: 'ss03' on, 'ss01' on;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+
+}
+.profile-data .profile-content h2{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  padding:0px 20px;
+  border-right: 1px solid #E3E3E3;
+
+}
+.profile-data .profile-content h2 img{
+  width: 20px;
+height: 14px;
+}
+.profile-data .profile-content p{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.profile-data .profile-content p span{
+  color: rgba(44, 44, 44, 0.50);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
 }
