@@ -991,8 +991,8 @@ line-height: 32px; /* 200% */
 }
 .profile-data .profile-image{
   position: relative;
-  width: 140px;
-height: 160px;
+  width:auto;
+height: 180px;
 flex-shrink: 0;
 }
 .profile-data .profile-image img{
@@ -1001,6 +1001,11 @@ flex-shrink: 0;
  object-fit: cover;
  border-radius: 4px;
 }
+.profile-content{
+  margin-left: 15px;
+}
+
+
 .profile-data .profile-content h3{
   color: var(--f, #2C2C2C);
   font-feature-settings: 'ss03' on, 'ss01' on;
@@ -1020,7 +1025,7 @@ flex-shrink: 0;
   line-height: 14px;
   padding:0px 20px;
   border-right: 1px solid #E3E3E3;
-
+  white-space: nowrap;
 }
 .profile-data .profile-content h2 img{
   width: 20px;
@@ -1041,4 +1046,173 @@ height: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 18px; /* 128.571% */
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 0px;
+  transition: 0.3s;
+  margin: 0 10px;
+  position: relative;
+  background-color: transparent !important;
+  color: rgba(44, 44, 44, 0.50);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.tab button::before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  width: 0px;
+  background-color: #ff6c0b;
+  height: 5px;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
+.tab button:hover::before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #ff6c0b;
+  height: 5px;
+  transition: all 0.5s;
+}
+.active-tab{
+  position: relative;
+}
+.active-tab::before {
+  content: " ";
+  position: absolute !important;
+  bottom: 0px;
+  width: 100% !important;
+  background-color: #ff6c0b;
+  height: 5px;
+  border-radius: 4px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(132, 132, 132, 0.30);
+  background: #FFF;
+  box-shadow: 4px 10px 40px 0px rgba(163, 191, 185, 0.20);
+  padding: 24px 24px 0px 24px;
+
+}
+
+.tabcontent .heading{
+  color: var(--f, #2C2C2C);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+margin-bottom: 15px;
+}
+.tabcontent p{
+  color: rgba(44, 44, 44, 0.80);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.tab-select{
+  width: fit-content;
+  background-color: transparent;
+}
+.tab-select:active,
+.tab-select:focus{
+  outline: none;
+  box-shadow: none;
+}
+.tab-table thead tr th{
+  border-bottom: none !important;
+}
+.tab-table thead tr th h3{
+  color: rgba(44, 44, 44, 0.80);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  margin-bottom: 0px !important;
+}
+.tab-table thead tr th h3 span{
+  color: #2C2C2C;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.tab-table{
+  border: 1px solid #F0EDEA;;
+}
+.tab-table thead{
+  border-bottom: 1px solid #F0EDEA;;
+}
+.tab-table tbody{
+  border-top: none !important;
+  
+}
+.tab-table thead tr th{
+  border: 1px solid #F0EDEA;;
+}
+.tab-table tbody tr td{
+  border: 1px solid #F0EDEA;;
+}
+.tab-table tbody tr td h4{
+  color: var(--Primary, #FF6C0B);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  margin-bottom: 0px !important;
+  
+}
+.left-arrow,
+.right-arrow{
+  border-radius: 3px;
+  border: 1px solid rgba(44, 44, 44, 0.20);
+  opacity: 0.6;
+  box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.05);
+  padding:0px 4px;
+}
+.left-arrow svg path,
+.right-arrow svg path{
+  stroke: rgba(0, 0, 0, 0.6);
+}
+.left-arrow:hover,
+.right-arrow:hover{
+  border: 1px solid #FF6C0B;
+  opacity: 1;
+}
+.left-arrow:hover svg path,
+.right-arrow:hover svg path{
+  stroke:#FF6C0B;
 }

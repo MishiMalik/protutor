@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-md-center flex-md-row flex-column">
-                        <select class="form-select header-select-dark mb-md-0 mb-3" style=""
+                        <select class="form-select header-select-dark mb-md-0 mb-3"
                             aria-label="Default select example ">
                             <option selected style="color: black;">English, USD</option>
                             <option value="1" style="color: black;">English, EUR</option>
@@ -68,39 +68,236 @@
             <div class="hero-section-profile-bg"></div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
+                    <div class="col-xl-8">
                         <div class="profile-data">
                             <div class="profile-image">
                                 <img src="assets/images/ppp.png" alt="">
                                 <div class="profile-active"></div>
                             </div>
-                            <div class="profile-content">
+                            <div class="profile-content mt-lg-0 mt-3">
                                 <h3>Hanna Baptista</h3>
-                                <div class="d-flex align-items-center mt-2">
+                                <div
+                                    class="d-flex align-items-lg-center mt-3 flex-lg-row flex-column align-items-start">
                                     <h2 class="text-primary ps-0">English teacher</h2>
                                     <h2>10 years of experience</h2>
                                     <h2 class=" border-end-0"><img src="assets/images/flag.png" alt=""
                                             class="me-2">United State</h2>
                                 </div>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="d-flex align-items-start mt-3">
                                     <img src="assets/images/lesson.svg" alt="" class="me-2">
                                     <p class="mb-0 pb-0">
                                         Teaches English lessons</p>
                                 </div>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="d-flex align-items-start mt-3">
                                     <img src="assets/images/speaks.svg" alt="" class="me-2">
                                     <p class="mb-0 pb-0"><span>Speaks:</span> English (Native), German (C2), Lithuanian
                                         (B2)</p>
                                 </div>
-                                <div class="d-flex align-items-center mt-2">
+                                <div class="d-flex align-items-start mt-3">
                                     <img src="assets/images/taughts.svg" alt="" class="me-2">
                                     <p class="mb-0 pb-0">315lessons taught</p>
                                 </div>
                             </div>
                         </div>
 
+
+                        <div class="mt-4">
+                            <!-- Tab links -->
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'About')"
+                                    id="defaultOpen">About</button>
+                                <button class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</button>
+                                <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews (5)</button>
+                                <button class="tablinks" onclick="openCity(event, 'Schedule')">Resume</button>
+                                <button class="tablinks" onclick="openCity(event, 'Reviews')">Subjects</button>
+                            </div>
+
+                            <!-- Tab content -->
+                            <div id="About" class="tabcontent">
+                                <h1 class="heading">About the tutor</h1>
+                                <p>I am 29 years old and I'm a Sworn Translator. I've been teaching ESL for all levels
+                                    since 2010 and I've been tutoring Spanish students since high-school. I've also do
+                                    translations from Spanish into English and Portuguese. My love for languages has
+                                    made me continue studying different teaching methodologies and improving my
+                                    knowledge of the grammar, not only in English but in my mother tongue as well.</p>
+
+                                <p>
+                                    Besides having degree as a Sworn Translator, I have a CELTA certificate and almost a
+                                    decade of experience in teaching all levels and ages in schools and institutes. Even
+                                    before the pandemic, I started teaching English online and that allowed me to get
+                                    students from all over the world. I love working with games and videos and adapting
+                                    my classes for any needs my students may have.
+                                </p>
+                                <p>
+                                    Book a lesson with me so we can set your goals to achieve that English or Spanish
+                                    level you've always dreamed.
+                                </p>
+                            </div>
+
+                            <div id="Schedule" class="tabcontent " style="border-radius: 6px;
+                            border: 1px solid rgba(17, 159, 46, 0.30);
+                            background: #FAFFFB;
+                            box-shadow: 4px 10px 40px 0px rgba(163, 191, 185, 0.20);">
+                                <h1 class="heading">Schedule</h1>
+                                <p>Choose the time for your first lesson. The timings are displayed in your local
+                                    timezone.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <div class="left-arrow">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.5249 9.96004L4.2649 6.70004C3.8799 6.31504 3.8799 5.68504 4.2649 5.30004L7.5249 2.04004"
+                                                    stroke-opacity="0.3" stroke-width="1.5"
+                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="right-arrow ms-2 me-3">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.4751 2.03996L7.7351 5.29996C8.1201 5.68496 8.1201 6.31496 7.7351 6.69996L4.4751 9.95996"
+                                                    stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <p class="mb-0 pb-0">Jun 23–29, 2023</p>
+                                    </div>
+                                    <select class="form-select tab-select " aria-label="Default select example ">
+                                        <option selected style="color: black;">Asia/Dhaka GMT +6:00</option>
+                                        <option value="1" style="color: black;">Asia/Dhaka GMT +6:00</option>
+                                        <option value="2" style="color: black;">Asia/Dhaka GMT +6:00</option>
+                                        <option value="3" style="color: black;">Asia/Dhaka GMT +6:00</option>
+                                    </select>
+                                </div>
+                              <table class="table tab-table mt-4">
+                                <thead>
+                                    <tr>
+                                        <th><h3>Mon<br><span>23</span></h3></th>
+                                        <th><h3>Mon<br><span>23</span></h3></th>
+                                        <th><h3>Tue<br><span>23</span></h3></th>
+                                        <th><h3>Wed<br><span>23</span></h3></th>
+                                        <th><h3>Thu<br><span>23</span></h3></th>
+                                        <th><h3>Fri<br><span>23</span></h3></th>
+                                        <th><h3>Sat<br><span>23</span></h3></th>
+                                        <th><h3>Sun<br><span>23</span></h3></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>05:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><h4>01:00</h4></td>
+                                        <td><h4>22:00</h4></td>
+                                    </tr>
+                                   
+                                </tbody>
+                              </table>
+
+                            </div>
+
+                            <div id="Reviews" class="tabcontent">
+                                <h3>Tokyo</h3>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                            <div id="Paris" class="tabcontent">
+                                <h3>Resume</h3>
+                                <p>Paris is the capital of France.</p>
+                            </div>
+
+                            <div id="Reviews" class="tabcontent">
+                                <h3>Subjects</h3>
+                                <p>Tokyo is the capital of Japan.</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-lg-4 bg-danger">
+                    <div class="col-xl-4 bg-danger">
 
                     </div>
                 </div>
@@ -371,6 +568,30 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active-tab";
+        }
+        document.getElementById("defaultOpen").click();
+
+    </script>
 
 </body>
 
