@@ -3,14 +3,24 @@ $(window).on("scroll", function() {
         $(".top-navbar-div").css('background-color','rgba(55, 31, 85, 0.896)');
         $(".top-navbar-div").css('padding-top','10px');
         $(".top-navbar-div").css('padding-bottom','10px');
-    } else {
+        $(".navbar-collapse").removeClass("navbar-collapse-light");
+        $(".top-navbar-light li a").css("color","white");
+        $(".header-select-dark").css("color","white");
+        $(".header-select-dark").css("background-image", 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'10\' viewBox=\'0 0 18 10\' fill=\'none\'><path d=\'M17 1L9 9L1 1\' stroke=\'white\' stroke-opacity=\'0.8\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>")');
+      } else {
         //remove the background property so it comes transparent again (defined in your css)
        $(".top-navbar-div").css('background-color','transparent');
        $(".top-navbar-div").css('padding-top','18px');
        $(".top-navbar-div").css('padding-bottom','18px');
+       $(".top-navbar-light li a").css("color","#2C2C2C");
+       $(".header-select-dark").css("color","#2C2C2C");
+       $(".header-select-dark").css("background-image", 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'10\' viewBox=\'0 0 18 10\' fill=\'none\'><path d=\'M17 1L9 9L1 1\' stroke=\'black\' stroke-opacity=\'0.8\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>")');
+
     }
 });
-
+$(".navbar-toggler").on("click",function(){
+  $(".top-navbar-div").toggleClass('top-navbar-div-bg');
+})
 
 $(document).ready(function() {
     // Initially, hide all subject-detail-cards
