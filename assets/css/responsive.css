@@ -272,4 +272,22 @@
   .heading {
     font-size: 24px;
   }
+  .profile-content{
+    margin-left: 0px;
+  }
+  .tab-div{
+    overflow-x: scroll;
+  }
+  .tab{
+    min-width: 420px;
+    padding-bottom: 15px;
+   
+  }
+  .tabcontent p{
+    font-size: 14px;
+  }
+  .tab button{
+    font-size: 14px;
+    margin: 0 0px;
+  }
 }
