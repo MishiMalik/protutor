@@ -126,13 +126,19 @@
                             </div>
                             <div class="col-lg-6 mb-3">
                                 <div class="review-card">
-                                    <div class="d-flex align-items-center review-card-header">
-                                        <img src="assets/images/woman-with-headset-video-call 1.png" alt="">
-                                        <div class="ms-3">
-                                            <h2 class="mb-0 pb-0">Alfredo Schleifer</h2>
-                                            <span>February 1, 2023</span>
+                                    <div class="d-flex align-items-center justify-content-between review-card-header w-100">
+                                        <div class="d-flex align-items-center w-100">
+                                            <img src="assets/images/woman-with-headset-video-call 1.png" alt="">
+                                            <div class="ms-3">
+                                                <h2 class="mb-0 pb-0">Alfredo Schleifer</h2>
+                                                <span>February 1, 2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="recent-caption">
+                                            Recent review
                                         </div>
                                     </div>
+
                                     <div class="review-card-body mt-3">
                                         <img src="assets/images/semi.svg" alt="">
                                         <p class="mb-0 pb-0">In my experience all the teachers are very
@@ -146,16 +152,17 @@
 
                             <div class="mt-4">
                                 <!-- Tab links -->
-                              <div class="tab-div">
-                                <div class="tab">
-                                    <button class="tablinks" onclick="openCity(event, 'About')"
-                                        id="defaultOpen">About</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews (5)</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
-                                    <button class="tablinks" onclick="openCity(event, 'Subjects')">Subjects</button>
+                                <div class="tab-div">
+                                    <div class="tab">
+                                        <button class="tablinks" onclick="openCity(event, 'About')"
+                                            id="defaultOpen">About</button>
+                                        <button class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</button>
+                                        <button class="tablinks" onclick="openCity(event, 'Reviews')">Reviews
+                                            (5)</button>
+                                        <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
+                                        <button class="tablinks" onclick="openCity(event, 'Subjects')">Subjects</button>
+                                    </div>
                                 </div>
-                              </div>
 
                                 <!-- Tab content -->
                                 <div id="About" class="tabcontent">
@@ -194,8 +201,8 @@
                                     <h1 class="heading">Schedule</h1>
                                     <p>Choose the time for your first lesson. The timings are displayed in your local
                                         timezone.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                        <div class="d-flex align-items-center mb-4 me-3">
                                             <div class="left-arrow">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -216,14 +223,15 @@
                                             </div>
                                             <p class="mb-0 pb-0">Jun 23–29, 2023</p>
                                         </div>
-                                        <select class="form-select tab-select " aria-label="Default select example ">
+                                        <select class="form-select tab-select mb-4" aria-label="Default select example ">
                                             <option selected style="color: black;">Asia/Dhaka GMT +6:00</option>
                                             <option value="1" style="color: black;">Asia/Dhaka GMT +6:00</option>
                                             <option value="2" style="color: black;">Asia/Dhaka GMT +6:00</option>
                                             <option value="3" style="color: black;">Asia/Dhaka GMT +6:00</option>
                                         </select>
                                     </div>
-                                    <table class="table tab-table mt-4">
+                                   <div class="tab-table-responsive">
+                                    <table class="table tab-table ">
                                         <thead>
                                             <tr>
                                                 <th>
@@ -386,6 +394,7 @@
 
                                         </tbody>
                                     </table>
+                                   </div>
 
                                 </div>
 
@@ -396,7 +405,7 @@
                                             <div class="review-tag-div border-right py-5">
                                                 <div class="review-tag ">
                                                     <h2>5</h2>
-                                                    <div class="d-flex align-items-center my-3">
+                                                    <div class="d-flex align-items-center justify-content-center my-3">
                                                         <img src="assets/images/star.svg" alt="" class="me-1">
                                                         <img src="assets/images/star.svg" alt="" class="me-1">
                                                         <img src="assets/images/star.svg" alt="" class="me-1">
@@ -603,15 +612,13 @@
                                 </div>
 
                                 <div id="Resume" class="tabcontent">
-                                    <div class="d-flex align-items-center border-bottom pb-3 ">
-                                        <h1 class="heading mb-0">Resume</h1>
-                                        <div class="resume-tab ms-auto">
-                                            <button class="resumetablinks" id="defaultOpen2"
+                                    <div class="d-flex align-items-center  border-bottom pb-3 flex-wrap">
+                                        <h1 class="heading mb-0 mb-md-0 mb-2">Resume</h1>
+                                        <div class="resume-tab ms-auto ">
+                                            <button class="resumetablinks " id="defaultOpen2"
                                                 onclick="resume(event, 'Education')">Education</button>
-                                            <button class="resumetablinks"
+                                            <button class="resumetablinks "
                                                 onclick="resume(event, 'Work-experience')">Work experience</button>
-                                            <button class="resumetablinks"
-                                                onclick="resume(event, 'Certifications')">Certifications</button>
                                         </div>
                                     </div>
 
@@ -692,22 +699,22 @@
 
                     <div class="col-xl-4">
                         <div class="side-card">
-                            <video>
+                            <video controls>
                                 <source src="assets/images/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                            <div class="d-flex justify-content-between align-items-center mt-2">
-                                <div class="d-flex align-items-center">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap mt-2">
+                                <div class="d-flex align-items-center mb-3">
                                     <img src="assets/images/star.svg" alt="">
                                     <b class="text-dark me-2">5.0</b>
                                     <p class="mb-0 pb-0">(33 review)</p>
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mb-3">
                                     <b class="text-dark me-2">$20</b>
-                                        <p class="mb-0 pb-0 " > (50 - min lesson)</p>
+                                    <p class="mb-0 pb-0 "> (50 - min lesson)</p>
                                 </div>
                             </div>
-                            <button class="main-btn-sm w-100 mt-3">Book a trial lesson</button>
+                            <button class="main-btn-sm w-100">Book a trial lesson</button>
                             <div class="d-flex align-items-center mt-3">
                                 <img src="assets/images/heart.svg" alt="" class="me-2">
                                 <button class="main-btn-blank-sm w-100">Send message</button>
@@ -1234,22 +1241,22 @@
                 autoplay: true,
                 autoplayTimeout: 2000,
                 autoplayHoverPause: true,
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:1,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
                     },
-        767:{
-            items:2,
-        },
-        991:{
-            items:3,
-        },
-        1300:{
-            items:4,
-          
-        }
-    }
+                    767: {
+                        items: 2,
+                    },
+                    991: {
+                        items: 3,
+                    },
+                    1300: {
+                        items: 4,
+
+                    }
+                }
 
             });
         });

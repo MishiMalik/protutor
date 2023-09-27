@@ -1081,6 +1081,17 @@ line-height: 32px;
   height: 180px;
   flex-shrink: 0;
 }
+.profile-active{
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 14px;
+  border: 1px solid #22AE25;
+  background: #22AE25 !important;
+  top: 10px;
+  left: 10px;
+  z-index: 4;
+}
 
 .profile-data .profile-image img {
   height: 100%;
@@ -1425,7 +1436,18 @@ line-height: 32px;
   border-radius: 101.661px;
   object-fit: cover;
 }
-
+.recent-caption{
+  color: #CECECE;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 20px;
+background: #F6F6F6;
+padding: 3px 7px;
+white-space: nowrap;
+}
 .review-card-header h2 {
   color: var(--f, #2C2C2C);
   font-family: Poppins;

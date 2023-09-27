@@ -131,9 +131,20 @@
   .profile-data{
     align-items: flex-start;
   }
+  .border-right{
+    border-right: none !important;
+  }
+  .review-tag {
+    width: 100% !important;
+   
+  }
+  .review-tag-div{
+    padding: 10px 0px !important;
+  }
 }
 
 @media only screen and (max-width:768px) {
+
   .testimonial-text {
     font-size: 14px;
     line-height: normal;
@@ -289,5 +300,36 @@
   .tab button{
     font-size: 14px;
     margin: 0 0px;
+  }
+  .side-card p{
+    font-size: 13px;
+  }
+  .main-btn-sm{
+    padding: 8px 30px !important;
+    min-width: 190px;
+  }
+  .main-btn-blank-sm {
+    display: flex;
+    padding: 9px 10px;
+  }
+  .tabcontent{
+    padding: 15px;
+  }
+  .tab-table-responsive{
+    overflow-x: scroll;
+  }
+  .tab-table{
+    min-width: 500px;
+  }
+  .tab-select{
+    width: 100%;
+  }
+  .resume-tab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .resumetablinks {
+    flex-grow: 1;
   }
 }
