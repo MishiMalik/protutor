@@ -27,23 +27,15 @@ $(window).on("scroll", function () {
     );
     $(".light-logo").hide();
     $(".dark-logo").show();
-    $(".navbar-toggler").on("click", function () {
-      if ($(".dark-logo").is(":visible")) {
-        $(".dark-logo").hide();
-        $(".light-logo").show();
-      } else {
-        $(".dark-logo").show();
-        $(".light-logo").hide();
-      }
 
-      // Toggle navbar class
-      $(".light-nav").toggleClass("navbar-light navbar-dark");
-    });
   }
+
 });
 $(".navbar-toggler").on("click", function () {
   $(".top-navbar-div").toggleClass("top-navbar-div-bg");
+
 });
+
 
 $(document).ready(function () {
   // Initially, hide all subject-detail-cards
