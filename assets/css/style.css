@@ -1622,3 +1622,286 @@ line-height: normal;
 .light-logo{
   display: none;
 }
+
+
+/* ================================================================private */
+.teacher-card-div{
+padding: 20px 20px 20px 20px;
+flex-shrink: 0;
+border-radius: 6px;
+border: 1px solid rgba(255, 108, 11, 0.20);
+background: #FFFCFA;
+}
+.teacher-card--header{
+  display: flex;
+  align-items: flex-start;
+}
+.teacher-card--header .online-image{
+  width: 120px;
+  /* height: 100px; */
+  flex-shrink: 0;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 15px 15px 0px;
+}
+.teacher-card--header .online-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* height: 100px; */
+  flex-shrink: 0;
+}
+.teacher-card--header .online-image .online{
+  border-radius: 14px;
+border: 1px solid #FFF;
+background: #22AE25;
+width: 10px;
+height: 10px;
+flex-shrink: 0;
+position: absolute;
+top: 10px;
+left: 15px;
+
+}
+.profile-data-text h1{
+  color: var(--f, #2C2C2C);
+  font-feature-settings: 'ss03' on, 'ss01' on;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.profile-data-text h3{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.profile-data-text span{
+  color: rgba(44, 44, 44, 0.50);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.profile-data-text h2{
+  color: var(--Primary, #FF6C0B);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+  border-right: 1px solid #E3E3E3;
+  padding-right: 10px;
+}
+.profile-data-text p{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.profile-data-text p span{
+  color: rgba(44, 44, 44, 0.50);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.profile-price{
+  background-color: rgba(255, 108, 11, 0.10);
+  border-radius: 4px;
+  padding: 10px;
+}
+.profile-price h2{
+  color: var(--Primary, #FF6C0B);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.profile-price p{
+  color: rgba(44, 44, 44, 0.80);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.teacher-card-body p{
+  color: rgba(44, 44, 44, 0.80);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-align: justify;
+ 
+}
+.like:hover .like-fill{
+  fill:#FF6C0B;
+  cursor: pointer;
+}
+.liked{
+  fill:#FF6C0B;
+}
+.teacher-card--header-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teacher-heading{
+  color: rgba(44, 44, 44, 0.50);
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px; /* 120.833% */
+}
+
+.select-section{
+  margin-top: -60px;
+padding: 30px 40px;
+border-radius: 6px;
+background: #FFF;
+box-shadow: 4px 10px 40px 0px rgba(163, 191, 185, 0.20);
+}
+.select-section label{
+  color: rgba(44, 44, 44, 0.50);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+text-transform: uppercase;
+}
+.select-section select{
+  color: #2C2C2C;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+border: none;
+margin-top: 5px;
+padding: 5px;
+}
+.select-section select:focus,
+.select-section select:active{
+  outline: none;
+  box-shadow: none;
+}
+.slc{
+  border-right: 1px solid #E3E3E3;
+  padding-right: 20px;
+}
+.filter-search .dropdown button{
+  display: flex;
+padding: 7px 10px !important;
+align-items: center;
+gap: 15px;
+border-radius: 6px;
+border: 1px solid rgba(44, 44, 44, 0.20);
+background-color: transparent;
+color: rgba(44, 44, 44, 0.80);
+text-align: right;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+}
+.filter-search .dropdown .dropdown-menu{
+  width: fit-content;
+  padding: 0px 0px !important;
+}
+.filter-search .dropdown .dropdown-menu li{
+  padding: 5px 10px;
+}
+.filter-search .dropdown .dropdown-menu li label{
+
+  font-size: 14px;
+}
+.more-heading{
+  background: #FFF3EC;
+ padding: 3px 5px;
+}
+
+
+
+
+.more-heading h2{
+  color: rgba(44, 44, 44, 0.80);
+ font-size: 12px;
+ margin-bottom: 0px;
+ padding-bottom: 0;
+} 
+.sort{
+  display: flex;
+  align-items: center;
+}
+.sort p{
+  color: rgba(44, 44, 44, 0.50);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.sort select{
+  color: rgba(44, 44, 44, 0.80);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0;
+  border: none;
+  padding-right: 30px;
+  margin-left: 7px;
+}
+.sort select:focus{
+  outline: none;
+  box-shadow: none;
+}
+.search{
+  position: relative;
+}
+.search input{
+  display: flex;
+padding: 8px 25px 8px 10px;
+align-items: center;
+gap: 15px;
+border-radius: 6px;
+border: 1px solid rgba(44, 44, 44, 0.20);
+color: black;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+width: 250px;
+}
+.search input::placeholder{
+  color: rgba(44, 44, 44, 0.50);
+}
+.search input:focus,
+.search input:active{
+  outline: none;
+  box-shadow: none;
+}
+.search-icon{
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
