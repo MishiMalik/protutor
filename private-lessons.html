@@ -4,781 +4,1248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/private-lessons.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>Protutor</title>
 </head>
 
-<body>
+<body class="">
 
-    <!-------------
-navbar start 
---------------->
- 
-<header>
-    <nav class="navbar navbar-expand-xl  navbar-light  top-navbar-div light-nav">
+    <header>
+        <nav class="navbar navbar-expand-xl  navbar-light  top-navbar-div light-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="dark-logo" src="assets/images/logo-dark.png" alt="" class="dark-logo">
+                    <img id="light-logo" src="assets/images/image 2.png" alt="" class="light-logo">
+                </a>
+                <button id="toggle-logo" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 top-navbar d-flex top-navbar-light">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Find Tutors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Enterprise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active-nav" href="become-tutor.html">Become a tutor</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-md-center flex-md-row flex-column">
+                        <select class="form-select header-select-dark mb-md-0 mb-3"
+                            aria-label="Default select example ">
+                            <option selected style="color: black;">English, USD</option>
+                            <option value="1" style="color: black;">English, EUR</option>
+                            <option value="2" style="color: black;">English, USD</option>
+                            <option value="3" style="color: black;">English, USD</option>
+                        </select>
+                        <button class="main-btn-blank ms-3 mb-md-0 mb-3 w-auto">Refer a friend</button>
+                        <a href="login.html" class="main-btn ms-3 w-auto">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <section class="hero ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 order-lg-1 order-2">
+                        <div class="left-hero">
+                            <div class="btn-hero">
+                                <button id="btn-hero-1" class="btns-hero">Private lessons</button>
+                                <button id="btn-hero-2" class="btns-hero">Group Lessons</button>
+                            </div>
+                            <h1 class="main-heading text-dark mt-5">
+                                Online English tutors <br> & teachers <br> for private lessons
+                            </h1>
+                            <p class="main-text text-dark">Looking for an online English tutor? ProTutor is the leading
+                                online <br> language learning platform
+                                worldwide.</p>
+
+                            <div class="btn-group">
+                                <button type="button" id="btn-1" class="btn dropdown-toggle btn-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul id="dropdown-menu-1" class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Urdu</a></li>
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    <li><a class="dropdown-item" href="#">German</a></li>
+                                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+
+                                </ul>
+                                <button class="btn-started">Get Started</button>
+                            </div>
+                            <p class="last-hero-p">Our <span class="c1000">1000+</span> Tutors help student to grub
+                                knowledge.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-2 order-1">
+                        <div class="right-hero d-flex justify-content-center mb-lg-0 mb-3">
+                            <img src="assets/images/images/hero.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="">
+            <div class="container">
+                <div class="row select-section">
+                    <div class="col-lg-3">
+                        <div class="slc">
+                            <label for="">I want to learn</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected> Select </option>
+                                <option value="English">English</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Italian">Italian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="slc">
+                            <label for="">price per lesson</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>$1-$40</option>
+                                <option value="$1-$40">$1-$40</option>
+                                <option value="$1-$40">$1-$40</option>
+                                <option value="$1-$40">$1-$40</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="slc">
+                            <label for="">Country of birth</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Any country </option>
+                                <option value="English">English</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Italian">Italian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="slc border-0">
+                            <label for="">I’m available</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected> Any time</option>
+                                <option value="English" style="margin: 0px 20px !important;">English</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Italian">Italian</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row filter-search align-items-center">
+                    <div class="col-xl-6 d-flex align-items-center flex-md-row flex-column">
+                        <div class="dropdown my-3 mx-2">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Specialist
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li class="more-heading">
+                                    <h2 class="">
+                                        English Specialist
+                                    </h2>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Mathmatics
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Computer
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Chemistry
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-heading">
+                                    <h2 class="">
+                                        More Specialist
+                                    </h2>
+                                </li>
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown my-3 mx-2">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Also Speak
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Mathmatics
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Computer
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Chemistry
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-heading">
+                                    <h2 class="">
+                                        More Languages
+                                    </h2>
+                                </li>
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown my-3 mx-2">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nation speaker
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Mathmatics
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Computer
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Chemistry
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-heading">
+                                    <h2 class="">
+                                        More Languages
+                                    </h2>
+                                </li>
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown my-3 mx-2">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Professional
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Mathmatics
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Computer
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Chemistry
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-heading">
+                                    <h2 class="">
+                                        More Languages
+                                    </h2>
+                                </li>
+
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Englis
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Urdu
+                                        </label>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 d-flex align-items-center flex-md-row flex-column">
+                        <div class="sort ms-auto d-flex align-items-center mb-md-0 mb-3">
+                            <p class="mb-0 pb-0">
+                                sort by:
+                            </p>
+                            <div class="d-flex align-items-md-center flex-md-row flex-column ">
+                                <select class="form-select text-dark "
+                                    aria-label="Default select example ">
+                                    <option selected style="color: black;">Our top picks</option>
+                                    <option value="1" style="color: black;">English, EUR</option>
+                                    <option value="2" style="color: black;">English, USD</option>
+                                    <option value="3" style="color: black;">English, USD</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search by name or keyword">
+                            <img src="assets/images/search.svg" alt="" class="search-icon">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="teacher-section pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="teacher-heading mb-3">
+                            15,544 English teachers available
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="teacher-card-div mb-3">
+                            <div class="teacher-card--header">
+
+                                <div class="teacher-card--header-text w-100 align-items-start">
+                                    <div class=" d-flex align-items-start flex-md-row flex-column mb-md-0 mb-3">
+                                        <div class="online-image">
+                                            <img src="assets/images/ppp.png" alt="">
+                                            <div class="online"></div>
+                                        </div>
+                                        <div class="profile-data-text">
+                                            <div
+                                                class="d-flex align-items-sm-center flex-sm-row flex-column align-items-start">
+                                                <h1 class="mb-0 pb-0">Hanna Baptista</h1>
+                                                <div class="d-flex align-items-center mt-sm-0 mt-2">
+                                                    <img src="assets/images/star.svg" alt="" class="ms-sm-3 ms-0 me-1">
+                                                    <h3 class="mb-0 pb-0">5.0</h3>
+                                                    <span>(33 review)</span>
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <!-- <h2 class="mb-0 pb-0">English teacher</h2> -->
+                                                <div
+                                                    class="d-flex align-items-lg-center mt-3 flex-wrap align-items-start">
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+
+                                                </div>
+
+                                                <div class="d-flex align-items-center  mt-2">
+                                                    <img src="assets/images/flag.png" alt="" class="me-1">
+                                                    <p class="mb-0 pb-0">United State</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0 pb-0 mt-2 mb-2">
+                                                    <span>Speaks:</span> English (Native) German (Advanced)
+                                                    Lithuanian
+                                                    (Native)
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="profile-price flex-shrink-0">
+                                        <h2 class="mb-0 pb-0">$105.00</h2>
+                                        <p class="mb-0 pb-0">50-min lesson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card-body">
+                                <p>
+                                    English tutor with over 5 years of teaching experience Hi! I'm Ugne. Originally I am
+                                    from Lithuania, however, I have completed my high school education in an American
+                                    International School and my bachelor's degree at a university in London, UK. I have
+                                    quite a few interests and creative hobbies, however my favorite thing to do whenever
+                                    I have the time is traveling as much as possible.
+
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
+                                <div class="mb-md-0 mb-3">
+                                    <img src="assets/images/veri.svg" alt="">
+                                </div>
+                                <div class="d-flex align-items-center flex-md-row flex-column sm-100 ">
+                                    <div class="d-flex align-items-center w-100 mb-md-0 mb-3">
+                                        <div class="like">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40" fill="none">
+                                                <path
+                                                    d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z"
+                                                    fill="#FF6C0B" fill-opacity="0.15" />
+                                                <path class="like-fill "
+                                                    d="M18.6356 12.9894L18.6468 13.0001L18.6583 13.0104C19.0273 13.3404 19.505 13.5228 20 13.5228C20.495 13.5228 20.9727 13.3404 21.3417 13.0104L21.3535 12.9998L21.365 12.9888C22.2116 12.1818 23.8293 11 26 11C27.5801 11 28.7855 11.6184 29.6199 12.6803C30.4752 13.7688 31 15.4045 31 17.5C31 18.7417 30.4893 20.1505 29.5891 21.6176C28.696 23.073 27.467 24.5082 26.1492 25.7806C24.8327 27.0516 23.4532 28.1356 22.2806 28.895C21.6935 29.2752 21.1737 29.5641 20.7514 29.754C20.297 29.9584 20.0599 30 20 30C19.9401 30 19.703 29.9584 19.2486 29.754C18.8263 29.5641 18.3065 29.2752 17.7194 28.895C16.5468 28.1356 15.1673 27.0516 13.8508 25.7806C12.533 24.5082 11.304 23.073 10.4109 21.6176C9.51066 20.1505 9 18.7417 9 17.5C9 15.4045 9.52485 13.7688 10.3801 12.6803C11.2145 11.6184 12.4199 11 14 11C16.169 11 17.7883 12.183 18.6356 12.9894Z"
+                                                    stroke="#FF6C0B" stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <button class="main-btn-blank-sm w-100 mx-3">Message</button>
+                                    </div>
+                                    <button class="main-btn-sm w-100" style="white-space: nowrap;">Book a trial
+                                        lesson</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teacher-card-div mb-3">
+                            <div class="teacher-card--header">
+
+                                <div class="teacher-card--header-text w-100 align-items-start">
+                                    <div class=" d-flex align-items-start flex-md-row flex-column mb-md-0 mb-3">
+                                        <div class="online-image">
+                                            <img src="assets/images/ppp.png" alt="">
+                                            <div class="online"></div>
+                                        </div>
+                                        <div class="profile-data-text">
+                                            <div
+                                                class="d-flex align-items-sm-center flex-sm-row flex-column align-items-start">
+                                                <h1 class="mb-0 pb-0">Hanna Baptista</h1>
+                                                <div class="d-flex align-items-center mt-sm-0 mt-2">
+                                                    <img src="assets/images/star.svg" alt="" class="ms-sm-3 ms-0 me-1">
+                                                    <h3 class="mb-0 pb-0">5.0</h3>
+                                                    <span>(33 review)</span>
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <!-- <h2 class="mb-0 pb-0">English teacher</h2> -->
+                                                <div
+                                                    class="d-flex align-items-lg-center mt-3 flex-wrap align-items-start">
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+                                                    <h2 class="text-primary me-2 ps-0">English teacher</h2>
+
+                                                </div>
+
+                                                <div class="d-flex align-items-center  mt-2">
+                                                    <img src="assets/images/flag.png" alt="" class="me-1">
+                                                    <p class="mb-0 pb-0">United State</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-0 pb-0 mt-2 mb-2">
+                                                    <span>Speaks:</span> English (Native) German (Advanced)
+                                                    Lithuanian
+                                                    (Native)
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="profile-price flex-shrink-0">
+                                        <h2 class="mb-0 pb-0">$105.00</h2>
+                                        <p class="mb-0 pb-0">50-min lesson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teacher-card-body">
+                                <p>
+                                    English tutor with over 5 years of teaching experience Hi! I'm Ugne. Originally I am
+                                    from Lithuania, however, I have completed my high school education in an American
+                                    International School and my bachelor's degree at a university in London, UK. I have
+                                    quite a few interests and creative hobbies, however my favorite thing to do whenever
+                                    I have the time is traveling as much as possible.
+
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
+                                <div class="mb-md-0 mb-3">
+                                    <img src="assets/images/veri.svg" alt="">
+                                </div>
+                                <div class="d-flex align-items-center flex-md-row flex-column sm-100 ">
+                                    <div class="d-flex align-items-center w-100 mb-md-0 mb-3">
+                                        <div class="like">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 40 40" fill="none">
+                                                <path
+                                                    d="M0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20Z"
+                                                    fill="#FF6C0B" fill-opacity="0.15" />
+                                                <path class="like-fill "
+                                                    d="M18.6356 12.9894L18.6468 13.0001L18.6583 13.0104C19.0273 13.3404 19.505 13.5228 20 13.5228C20.495 13.5228 20.9727 13.3404 21.3417 13.0104L21.3535 12.9998L21.365 12.9888C22.2116 12.1818 23.8293 11 26 11C27.5801 11 28.7855 11.6184 29.6199 12.6803C30.4752 13.7688 31 15.4045 31 17.5C31 18.7417 30.4893 20.1505 29.5891 21.6176C28.696 23.073 27.467 24.5082 26.1492 25.7806C24.8327 27.0516 23.4532 28.1356 22.2806 28.895C21.6935 29.2752 21.1737 29.5641 20.7514 29.754C20.297 29.9584 20.0599 30 20 30C19.9401 30 19.703 29.9584 19.2486 29.754C18.8263 29.5641 18.3065 29.2752 17.7194 28.895C16.5468 28.1356 15.1673 27.0516 13.8508 25.7806C12.533 24.5082 11.304 23.073 10.4109 21.6176C9.51066 20.1505 9 18.7417 9 17.5C9 15.4045 9.52485 13.7688 10.3801 12.6803C11.2145 11.6184 12.4199 11 14 11C16.169 11 17.7883 12.183 18.6356 12.9894Z"
+                                                    stroke="#FF6C0B" stroke-width="2" />
+                                            </svg>
+                                        </div>
+                                        <button class="main-btn-blank-sm w-100 mx-3">Message</button>
+                                    </div>
+                                    <button class="main-btn-sm w-100" style="white-space: nowrap;">Book a trial
+                                        lesson</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination mt-4">
+                            <div class="hide-sm">
+                                <img class="arrow" src="assets/images/images/arrow-left.svg" alt="">
+                                <a class="prev" href="#">Previous</a>
+                            </div>
+                            <ul class="pg-ul">
+                                <li id="pg-1" class="pg-list"><a href="#">1</a></li>
+                                <li class="pg-list"><a href="#">2</a></li>
+                                <li class="pg-list"><a href="#">3</a></li>
+                                <li class="pg-list">...</li>
+                                <li class="pg-list"><a href="#">8</a></li>
+                                <li class="pg-list"><a href="#">9</a></li>
+                                <li class="pg-list"><a href="#">10</a></li>
+                            </ul>
+                            <div class="hide-sm">
+                                <a class="next" href="#">Next</a>
+                                <img class="arrow" src="assets/images/images/arrow-right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="right-p-part-content">
+                            <div class="side-card">
+                                <video controls>
+                                    <source src="assets/images/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+
+                                <div class="world-div mt-1">
+                                    <img src="assets/images/images/world.svg" alt="" class="me-2">
+                                    <p class="mb-0 pb-0">Times are shown in your local timezone</p>
+                                </div>
+                                <div class="grid-container">
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item day-name">Mon</div>
+                                    <div class="grid-item day-name">Tue</div>
+                                    <div class="grid-item day-name">Wed</div>
+                                    <div class="grid-item day-name">Thu</div>
+                                    <div class="grid-item day-name">Fri</div>
+                                    <div class="grid-item day-name">Sat</div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"><span class="day">Morning</span><br><span
+                                            class="time">06:00-12:00</span>
+                                    </div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"><span class="day">Afternoon</span><br><span
+                                            class="time">12:00-18:00</span>
+                                    </div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item"><span class="day">Evening</span><br><span
+                                            class="time">18:00-20:00</span>
+                                    </div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"></div>
+                                    <div class="grid-item"><span class="day">Night</span><br><span
+                                            class="time">00:00-16:00</span></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                    <div class="grid-item tick"><img class="tick-img"
+                                            src="assets/images/images/tick-mark.svg" alt=""></div>
+                                </div>
+
+                                <button class="schedule-btn mt-3 mb-1">View full schedule</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <h2 class="heading text-lg-start text-center">
+                            Student Testimonials
+                        </h2>
+
+                        <div id="carouselExampleIndicators" class="carousel slide testimonial-slider"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p class="testimonial-text  text-lg-start text-center">
+                                        <img src="assets/images/comma.svg" alt="">
+                                        In my experience all the teachers are very supportive and friendly and the
+                                        placement process has been very smooth. it’s also no issue talk about whatever
+                                        you want to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        placeat fugiat earum?
+
+                                    </p>
+                                    <h4>Sherina Munir - Designer</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="testimonial-text  text-lg-start text-center">
+                                        <img src="assets/images/comma.svg" alt="">
+                                        In my experience all the teachers are very supportive and friendly and the
+                                        placement process has been very smooth. it’s also no issue talk about whatever
+                                        you want to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        placeat fugiat earum?
+
+                                    </p>
+                                    <h4>Sherina Munir - Designer</h4>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="testimonial-text  text-lg-start text-center">
+                                        <img src="assets/images/comma.svg" alt="">
+                                        In my experience all the teachers are very supportive and friendly and the
+                                        placement process has been very smooth. it’s also no issue talk about whatever
+                                        you want to Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                        placeat fugiat earum?
+
+                                    </p>
+                                    <h4>Sherina Munir - Designer</h4>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center order-lg-2 order-1 mb-lg-0 mb-4">
+                        <img src="assets/images/testimonials.png" alt="" class="mx-auto img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="language-training">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 d-flex justify-content-center  mb-lg-0 mb-4">
+                        <img src="assets/images/lang.png" alt="" class="mx-auto img-fluid">
+                    </div>
+                    <div class="col-lg-6 pe-lg-5 ">
+                        <h2 class="heading text-md-start">
+                            Corporate language training for business
+                        </h2>
+                        <p class="main-text2 text-md-start text-center text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                ;">
+                            ProTutor corporate training is designed for teams and businesses offering personalized
+                            language learning with online tutors. Book a demo to learn more.
+                            Want your employer to pay for your lessons? Refer your company! </p>
+
+                        <div
+                            class="d-flex align-items-center justify-content-lg-start justify-content-center flex-md-row flex-column mt-3 pt-3 mb-3">
+                            <button class="main-btn main-btn2 ">Join as a Tutor</button>
+                            <button class="main-btn-blank ms-md-3 mt-md-0 mt-3">Join as a Student</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <h2 class="heading text-md-start">
+                            Find an Online English Teacher to Help You Master English
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 pe-lg-5 ">
+
+
+                        <div class="accordion mt-3 faq-accordian" id="myAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">Is there a free trial available?</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="card-body">
+                                        <p class="main-text2  text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                                        ;">
+                                            Live tutoring software enables tutors to teach students in real time
+                                            utilizing interactive
+                                            video conferencing features. As a Student or Parent, you can browse through
+                                            Tutor profiles
+                                            and their subject expertise, and thereafter book live lesson.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo">Can I change my plan later?</button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show"
+                                    data-bs-parent="#myAccordion">
+                                    <div class="card-body">
+                                        <p class="main-text2  text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                                        ;">
+                                            Live tutoring software enables tutors to teach students in real time
+                                            utilizing interactive
+                                            video conferencing features. As a Student or Parent, you can browse through
+                                            Tutor profiles
+                                            and their subject expertise, and thereafter book live lesson.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree">What is your cancellation policy?</button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#myAccordion">
+                                    <div class="card-body">
+                                        <p class="main-text2  text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                                        ;">
+                                            Live tutoring software enables tutors to teach students in real time
+                                            utilizing interactive
+                                            video conferencing features. As a Student or Parent, you can browse through
+                                            Tutor profiles
+                                            and their subject expertise, and thereafter book live lesson.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4">Can other info be added to an invoice?</button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="card-body">
+                                        <p class="main-text2  text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                                        ;">
+                                            Live tutoring software enables tutors to teach students in real time
+                                            utilizing interactive
+                                            video conferencing features. As a Student or Parent, you can browse through
+                                            Tutor profiles
+                                            and their subject expertise, and thereafter book live lesson.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5">How does billing work?</button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                    <div class="card-body">
+                                        <p class="main-text2  text-gray mt-3" style="color: rgba(44, 44, 44, 0.80);
+                                        ;">
+                                            Live tutoring software enables tutors to teach students in real time
+                                            utilizing interactive
+                                            video conferencing features. As a Student or Parent, you can browse through
+                                            Tutor profiles
+                                            and their subject expertise, and thereafter book live lesson.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img id="dark-logo" src="assets/images/logo-dark.png" alt="" class="dark-logo">
-                <img id="light-logo" src="assets/images/image 2.png" alt="" class="light-logo">
-            </a>
-            <button id="toggle-logo" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 top-navbar d-flex top-navbar-light">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Find Tutors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Enterprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active-nav" href="become-tutor.html">Become a tutor</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-md-center flex-md-row flex-column">
-                    <select class="form-select header-select-dark mb-md-0 mb-3"
-                        aria-label="Default select example ">
-                        <option selected style="color: black;">English, USD</option>
-                        <option value="1" style="color: black;">English, EUR</option>
-                        <option value="2" style="color: black;">English, USD</option>
-                        <option value="3" style="color: black;">English, USD</option>
-                    </select>
-                    <button class="main-btn-blank ms-3 mb-md-0 mb-3 w-auto">Refer a friend</button>
-                    <a href="login.html" class="main-btn ms-3 w-auto">Log in</a>
+            <div class="row">
+                <div class="col-lg-3 mb-lg-0 mb-4 d-flex flex-column align-items-md-start align-items-center">
+                    <img src="assets/images/image 2.png" alt="">
+                    <p class="footer text">
+                        We take care of your health with regular and fun exercise
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <a href="">
+                            <img src="assets/images/fb.svg" alt="" class="me-3">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/tw.svg" alt="" class="me-3">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/insta.svg" alt="" class="me-3">
+                        </a>
+                        <a href="">
+                            <img src="assets/images/youtube.svg" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-</header>
-    <!-------------
-navbar end 
---------------->
 
-    <!---------------- 
-hero section start
- ----------------->
+                <div class="col-lg-2 col-md-6 ms-auto d-flex flex-column align-items-md-start align-items-center">
+                    <h2 class="mb-3">Top Subjects</h2>
+                    <ul class="ms-0 ps-0">
+                        <li>
+                            <a href="">English</a>
+                        </li>
+                        <li>
+                            <a href="">German</a>
+                        </li>
+                        <li>
+                            <a href="">Arabic</a>
+                        </li>
+                        <li>
+                            <a href="">Spanish</a>
+                        </li>
+                    </ul>
+                </div>
 
-    <section class="hero">
-        <div class="left-hero">
-            <div class="btn-hero">
-                <button id="btn-hero-1" class="btns-hero">Private lessons</button>
-                <button id="btn-hero-2" class="btns-hero">Group Lessons</button>
-            </div>
-            <h1>
-                Online English tutors <br> & teachers <br> for private lessons
-            </h1>
-            <p>Looking for an online English tutor? ProTutor is the leading online <br> language learning platform
-                worldwide.</p>
+                <div class="col-lg-2 col-md-6 d-flex flex-column align-items-md-start align-items-center">
+                    <h2 class="mb-3">About</h2>
+                    <ul class="ms-0 ps-0 d-flex flex-column align-items-md-start align-items-center">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Find tutor</a>
+                        </li>
+                        <li>
+                            <a href="">Enterprise</a>
+                        </li>
+                        <li>
+                            <a href="become-tutor.html">Become a tutor</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="btn-group">
-                <button type="button" id="btn-1" class="btn dropdown-toggle btn-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    English
-                </button>
-                <ul id="dropdown-menu-1" class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Urdu</a></li>
-                    <li><a class="dropdown-item" href="#">Spanish</a></li>
-                    <li><a class="dropdown-item" href="#">German</a></li>
-                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+                <div class="col-lg-2 col-md-6 d-flex flex-column align-items-md-start align-items-center">
+                    <h2 class="mb-3">Help</h2>
+                    <ul class="ms-0 ps-0 d-flex flex-column align-items-md-start align-items-center">
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Support</a>
+                        </li>
+                    </ul>
+                </div>
 
-                </ul>
-                <button class="btn-started">Get Started</button>
-            </div>
-            <p class="last-hero-p">Our <span class="c1000">1000+</span> Tutors help student to grub knowledge.</p>
-
-        </div>
-
-        <div class="right-hero">
-            <div class="hero-img-div">
-                <img src="assets/images/images/hero.png" alt="">
-            </div>
-        </div>
-
-    </section>
-    <!---------------- 
-hero section end
- ----------------->
-    <section class="hehe">
-        <div class="drop-down-div">
-            <div class="drop-down-sub-div">
-                <p class="drop-p">I want to learn</p>
-                <div class="btn-group btn-g">
-                    <button type="button" id="drop-btn-1" class="btn btn-group-2 dropdown-toggle btn-lang"
-                        id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        English
-                    </button>
-                    <ul class="dropdown-menu dropdown-s">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">Urdu</a></li>
-                        <li><a class="dropdown-item" href="#">Spanish</a></li>
-                        <li><a class="dropdown-item" href="#">German</a></li>
-                        <li><a class="dropdown-item" href="#">Chinese</a></li>
-                        <li><a class="dropdown-item" href="#">Bengali</a></li>
-                        <li><a class="dropdown-item" href="#">Portogues</a></li>
-                        <li><a class="dropdown-item" href="#">Hindi</a></li>
-                        <li><a class="dropdown-item" href="#">Korean</a></li>
-                        <li><a class="dropdown-item" href="#">Japanese</a></li>
+                <div class="col-lg-2 col-md-6 d-flex flex-column align-items-md-start align-items-center">
+                    <h2 class="mb-3">Contact</h2>
+                    <ul class="ms-0 ps-0 d-flex flex-column align-items-md-start align-items-center">
+                        <li>
+                            <a href="">Demo@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="">+154515544854</a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li class="mt-4 pt-1">
+                            <select class="form-select  mb-md-0 mb-3" style="border-radius: 6px;
+                        border: 1px solid rgba(255, 108, 11, 0.20); color: rgba(44, 44, 44, 0.80);
+                        ;" aria-label="Default select example ">
+                                <option selected>English, USD</option>
+                                <option value="1">English, EUR</option>
+                                <option value="2">English, USD</option>
+                                <option value="3">English, USD</option>
+                            </select>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="vertical-line"></div>
-            <div class="drop-down-sub-div">
-                <p class="drop-p">Price per lessons</p>
-                <div class="btn-group btn-g">
-                    <button type="button" id="drop-btn-2" class="btn btn-group-2 dropdown-toggle btn-lang"
-                        id="priceDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        $1-$5
-                    </button>
-                    <ul class="dropdown-menu dropdown-s">
-                        <li><a class="dropdown-item" href="#">$1-$5</a></li>
-                        <li><a class="dropdown-item" href="#">$6-$10</a></li>
-                        <li><a class="dropdown-item" href="#">$11-$15</a></li>
-                        <li><a class="dropdown-item" href="#">$16-$20</a></li>
-                        <li><a class="dropdown-item" href="#">$21-$25</a></li>
-                        <li><a class="dropdown-item" href="#">$26-$30</a></li>
-                        <li><a class="dropdown-item" href="#">$31-$35</a></li>
-                        <li><a class="dropdown-item" href="#">36$-$40</a></li>
-                        <li><a class="dropdown-item" href="#">$40+</a></li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="drop-down-sub-div">
-                <p class="drop-p">Country of birth</p>
-                <div class="btn-group btn-g">
-                    <button type="button" id="drop-btn-3" class="btn btn-group-2 dropdown-toggle btn-lang"
-                        id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        Pakistan
-                    </button>
-                    <ul class="dropdown-menu dropdown-s">
-                        <li><a class="dropdown-item" href="#">Pakistan</a></li>
-                        <li><a class="dropdown-item" href="#">India</a></li>
-                        <li><a class="dropdown-item" href="#">USA</a></li>
-                        <li><a class="dropdown-item" href="#">Japan</a></li>
-                        <li><a class="dropdown-item" href="#">Sweden</a></li>
-                        <li><a class="dropdown-item" href="#">South Korea</a></li>
-                        <li><a class="dropdown-item" href="#">North Korea</a></li>
-                        <li><a class="dropdown-item" href="#">England</a></li>
-                        <li><a class="dropdown-item" href="#">Scotland</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="vertical-line"></div>
-            <div class="drop-down-sub-div">
-                <p class="drop-p">I am available</p>
-                <div class="btn-group btn-g">
-                    <button type="button" id="drop-btn-4" class="btn btn-group-2 dropdown-toggle btn-lang"
-                        id="availabilityDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        12:00 AM
-                    </button>
-                    <ul class="dropdown-menu dropdown-s">
-                        <li><a class="dropdown-item" href="#">12:00 AM </a></li>
-                        <li><a class="dropdown-item" href="#">2:00 AM</a></li>
-                        <li><a class="dropdown-item" href="#">4:00 AM</a></li>
-                        <li><a class="dropdown-item" href="#">6:00 AM</a></li>
-                        <li><a class="dropdown-item" href="#">8:00 AM</a></li>
-                        <li><a class="dropdown-item" href="#">10:00 AM</a></li>
-                        <li><a class="dropdown-item" href="#">12:00 PM </a></li>
-                    </ul>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-12 py-4" style="border-top: 2px dashed #E1E1E1;">
+                    <p class="footer-text mb-0 pb-0  text-center" style="color: rgba(44, 44, 44, 0.50);
+                    ">
+                        Copyright © 2023 all right reserved ProTutor
+                    </p>
                 </div>
             </div>
         </div>
-
-    </section>
-
-
-    <!-- <section class="drop-down-collection-section">
-
-        <div class="drop-down-collection-l-div">
-            <div class="btn-group under-drop-div">
-                <button type="button" class="btn dropdown-toggle under-drop" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Specialist
-                </button>
-            </div>
-            <div class="btn-group under-drop-div">
-                <button type="button" class="btn dropdown-toggle under-drop" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Also speaks
-                </button>
-            </div>
-            <div class="btn-group under-drop-div">
-                <button type="button" class="btn dropdown-toggle under-drop" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Nation speaker
-                </button>
-            </div>
-            <div class="btn-group under-drop-div">
-                <button type="button" class="btn dropdown-toggle under-drop" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Professional
-                </button>
-            </div>
-        </div>
-        <div class="drop-down-collection-r-div">
-            <div class="sorted-by-div">
-                <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle sorted-by-btn" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <span id="sort-by"> Sort by:</span> Our top picks
-                    </button>
-                </div>
-            </div>
-            <div>
-                <input class="search-bar" type="search" placeholder="Search by name or keyword">
-            </div>
-        </div>
-    </section> -->
-    <!---------------------------
-     pagination part start 
------------------------------>
-    <section class="pagination-sec">
-
-        <div class="teacher-container">
-            <h4>15,544 English teachers available</h4>
-            <div class="teacher-card">
-                <div class="teacher-info">
-                    <div class="teacher-img"><img src="assets/images/images/pagination.png" alt=""></div>
-                    <div class="teacher-info-div">
-                        <div class="teacher-name-div">
-                            <h6 class="teacher-name">Hanna Baptista</h6>
-                            <div class="teacher-rating-div">
-                                <img class="star" src="assets/images/images/star.svg" alt="">
-                                <p class="teacher-rating">5.0 <span class="review"> (33 review) </span></p>
-                            </div>
-                        </div>
-                        <div class="teacher-s-info-div">
-                            <h6 class="teacher-subject">English teacher</h6>
-                            <div class="teacher-place-div">
-                                <img class="country-flag" src="assets/images/images/country.png" alt="">
-                                <p class="teacher-country">United States</p>
-                            </div>
-                        </div>
-                        <div class="teacher-language-div">
-                            <p class="teacher-language"><span class="speaks">Speaks:</span>English (Native) German
-                                (Advanced)
-                                Lithuanian
-                                (Native)</p>
-                        </div>
-                    </div>
-                    <div class="teacher-rate-div">
-                        <h6 class="rate">$105.00</h6>
-                        <p class="time-duration">50-min lesson</p>
-                    </div>
-                </div>
-                <div class="teacher-exp-div">
-                    <p class="teacher-exp">English tutor with over 5 years of teaching experience Hi! I'm Ugne.
-                        Originally I
-                        am
-                        from Lithuania,
-                        however, I have completed my high school education in an American International School and my
-                        bachelor's
-                        degree at a university in London, UK. I have quite a few interests and creative hobbies, however
-                        my
-                        favorite thing to do whenever I have the time is traveling as much as possible.</p>
-                </div>
-                <div class="teacher-footer">
-                    <div>
-                        <img id="verify" src="assets/images/images/verified.png" alt="">
-                    </div>
-                    <div class="right-footer">
-                        <img class="heart-img" src="assets/images/images/heart-img.svg" alt="">
-                        <button class="msg-btn">Message</button>
-                        <button class="book-btn">Book a trial lesson</button>
-                    </div>
-                </div>
-            </div>
+    </footer>
 
 
 
 
-            <!-- same cards -->
-            <div class="teacher-card">
-                <div class="teacher-info">
-                    <div class="teacher-img"><img src="assets/images/images/pagination.png" alt=""></div>
-                    <div class="teacher-info-div">
-                        <div class="teacher-name-div">
-                            <h6 class="teacher-name">Hanna Baptista</h6>
-                            <div class="teacher-rating-div">
-                                <img class="star" src="assets/images/images/star.svg" alt="">
-                                <p class="teacher-rating">5.0 <span class="review"> (33 review) </span></p>
-                            </div>
-                        </div>
-                        <div class="teacher-s-info-div">
-                            <h6 class="teacher-subject">English teacher</h6>
-                            <div class="teacher-place-div">
-                                <img class="country-flag" src="assets/images/images/country.png" alt="">
-                                <p class="teacher-country">United States</p>
-                            </div>
-                        </div>
-                        <div class="teacher-language-div">
-                            <p class="teacher-language"><span class="speaks">Speaks:</span>English (Native) German
-                                (Advanced)
-                                Lithuanian
-                                (Native)</p>
-                        </div>
-                    </div>
-                    <div class="teacher-rate-div">
-                        <h6 class="rate">$105.00</h6>
-                        <p class="time-duration">50-min lesson</p>
-                    </div>
-                </div>
-                <div class="teacher-exp-div">
-                    <p class="teacher-exp">English tutor with over 5 years of teaching experience Hi! I'm Ugne.
-                        Originally I
-                        am
-                        from Lithuania,
-                        however, I have completed my high school education in an American International School and my
-                        bachelor's
-                        degree at a university in London, UK. I have quite a few interests and creative hobbies, however
-                        my
-                        favorite thing to do whenever I have the time is traveling as much as possible.</p>
-                </div>
-                <div class="teacher-footer">
-                    <div class="verified-img">
-                        <img src="assets/images/images/verified.png" alt="">
-                    </div>
-                    <div class="right-footer">
-                        <img class="heart-img" src="assets/images/images/heart-img.svg" alt="">
-                        <button class="msg-btn">Message</button>
-                        <button class="book-btn">Book a trial lesson</button>
-                    </div>
-                </div>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-info">
-                    <div class="teacher-img"><img src="assets/images/images/pagination.png" alt=""></div>
-                    <div class="teacher-info-div">
-                        <div class="teacher-name-div">
-                            <h6 class="teacher-name">Hanna Baptista</h6>
-                            <div class="teacher-rating-div">
-                                <img class="star" src="assets/images/images/star.svg" alt="">
-                                <p class="teacher-rating">5.0 <span class="review"> (33 review) </span></p>
-                            </div>
-                        </div>
-                        <div class="teacher-s-info-div">
-                            <h6 class="teacher-subject">English teacher</h6>
-                            <div class="teacher-place-div">
-                                <img class="country-flag" src="assets/images/images/country.png" alt="">
-                                <p class="teacher-country">United States</p>
-                            </div>
-                        </div>
-                        <div class="teacher-language-div">
-                            <p class="teacher-language"><span class="speaks">Speaks:</span>English (Native) German
-                                (Advanced)
-                                Lithuanian
-                                (Native)</p>
-                        </div>
-                    </div>
-                    <div class="teacher-rate-div">
-                        <h6 class="rate">$105.00</h6>
-                        <p class="time-duration">50-min lesson</p>
-                    </div>
-                </div>
-                <div class="teacher-exp-div">
-                    <p class="teacher-exp">English tutor with over 5 years of teaching experience Hi! I'm Ugne.
-                        Originally I
-                        am
-                        from Lithuania,
-                        however, I have completed my high school education in an American International School and my
-                        bachelor's
-                        degree at a university in London, UK. I have quite a few interests and creative hobbies, however
-                        my
-                        favorite thing to do whenever I have the time is traveling as much as possible.</p>
-                </div>
-                <div class="teacher-footer">
-                    <div class="verified-img">
-                        <img src="assets/images/images/verified.png" alt="">
-                    </div>
-                    <div class="right-footer">
-                        <img class="heart-img" src="assets/images/images/heart-img.svg" alt="">
-                        <button class="msg-btn">Message</button>
-                        <button class="book-btn">Book a trial lesson</button>
-                    </div>
-                </div>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-info">
-                    <div class="teacher-img"><img src="assets/images/images/pagination.png" alt=""></div>
-                    <div class="teacher-info-div">
-                        <div class="teacher-name-div">
-                            <h6 class="teacher-name">Hanna Baptista</h6>
-                            <div class="teacher-rating-div">
-                                <img class="star" src="assets/images/images/star.svg" alt="">
-                                <p class="teacher-rating">5.0 <span class="review"> (33 review) </span></p>
-                            </div>
-                        </div>
-                        <div class="teacher-s-info-div">
-                            <h6 class="teacher-subject">English teacher</h6>
-                            <div class="teacher-place-div">
-                                <img class="country-flag" src="assets/images/images/country.png" alt="">
-                                <p class="teacher-country">United States</p>
-                            </div>
-                        </div>
-                        <div class="teacher-language-div">
-                            <p class="teacher-language"><span class="speaks">Speaks:</span>English (Native) German
-                                (Advanced)
-                                Lithuanian
-                                (Native)</p>
-                        </div>
-                    </div>
-                    <div class="teacher-rate-div">
-                        <h6 class="rate">$105.00</h6>
-                        <p class="time-duration">50-min lesson</p>
-                    </div>
-                </div>
-                <div class="teacher-exp-div">
-                    <p class="teacher-exp">English tutor with over 5 years of teaching experience Hi! I'm Ugne.
-                        Originally I
-                        am
-                        from Lithuania,
-                        however, I have completed my high school education in an American International School and my
-                        bachelor's
-                        degree at a university in London, UK. I have quite a few interests and creative hobbies, however
-                        my
-                        favorite thing to do whenever I have the time is traveling as much as possible.</p>
-                </div>
-                <div class="teacher-footer">
-                    <div class="verified-img">
-                        <img src="assets/images/images/verified.png" alt="">
-                    </div>
-                    <div class="right-footer">
-                        <img class="heart-img" src="assets/images/images/heart-img.svg" alt="">
-                        <button class="msg-btn">Message</button>
-                        <button class="book-btn">Book a trial lesson</button>
-                    </div>
-                </div>
-            </div>
-            <div class="teacher-card">
-                <div class="teacher-info">
-                    <div class="teacher-img"><img src="assets/images/images/pagination.png" alt=""></div>
-                    <div class="teacher-info-div">
-                        <div class="teacher-name-div">
-                            <h6 class="teacher-name">Hanna Baptista</h6>
-                            <div class="teacher-rating-div">
-                                <img class="star" src="assets/images/images/star.svg" alt="">
-                                <p class="teacher-rating">5.0 <span class="review"> (33 review) </span></p>
-                            </div>
-                        </div>
-                        <div class="teacher-s-info-div">
-                            <h6 class="teacher-subject">English teacher</h6>
-                            <div class="teacher-place-div">
-                                <img class="country-flag" src="assets/images/images/country.png" alt="">
-                                <p class="teacher-country">United States</p>
-                            </div>
-                        </div>
-                        <div class="teacher-language-div">
-                            <p class="teacher-language"><span class="speaks">Speaks:</span>English (Native) German
-                                (Advanced)
-                                Lithuanian
-                                (Native)</p>
-                        </div>
-                    </div>
-                    <div class="teacher-rate-div">
-                        <h6 class="rate">$105.00</h6>
-                        <p class="time-duration">50-min lesson</p>
-                    </div>
-                </div>
-                <div class="teacher-exp-div">
-                    <p class="teacher-exp">English tutor with over 5 years of teaching experience Hi! I'm Ugne.
-                        Originally I
-                        am
-                        from Lithuania,
-                        however, I have completed my high school education in an American International School and my
-                        bachelor's
-                        degree at a university in London, UK. I have quite a few interests and creative hobbies, however
-                        my
-                        favorite thing to do whenever I have the time is traveling as much as possible.</p>
-                </div>
-                <div class="teacher-footer">
-                    <div class="verified-img">
-                        <img src="assets/images/images/verified.png" alt="">
-                    </div>
-                    <div class="right-footer">
-                        <img class="heart-img" src="assets/images/images/heart-img.svg" alt="">
-                        <button class="msg-btn">Message</button>
-                        <button class="book-btn">Book a trial lesson</button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="pagination">
-                <div>
-                    <img class="arrow" src="assets/images/images/arrow-left.svg" alt="">
-                    <a class="prev" href="#">Previous</a>
-                </div>
-                <ul class="pg-ul">
-                    <li id="pg-1" class="pg-list"><a href="#">1</a></li>
-                    <li class="pg-list"><a href="#">2</a></li>
-                    <li class="pg-list"><a href="#">3</a></li>
-                    <li class="pg-list">...</li>
-                    <li class="pg-list"><a href="#">8</a></li>
-                    <li class="pg-list"><a href="#">9</a></li>
-                    <li class="pg-list"><a href="#">10</a></li>
-                </ul>
-                <div>
-                    <a class="next" href="#">Next</a>
-                    <img class="arrow" src="assets/images/images/arrow-right.svg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="right-p-part">
-            <div class="right-p-part-content">
-                <div class="tutor-div">
-                    <img class="tutor" src="assets/images/images/Rectangle 4436.png" alt="">
-                    <img class="play-btn" src="assets/images/images/play-btn.svg" alt="">
-                </div>
-                <div class="world-div">
-                    <img src="assets/images/images/world.svg" alt="">
-                    <p>Times are shown in your local timezone</p>
-                </div>
-                <div class="grid-container">
-                    <div class="grid-item"></div>
-                    <div class="grid-item day-name">Mon</div>
-                    <div class="grid-item day-name">Tue</div>
-                    <div class="grid-item day-name">Wed</div>
-                    <div class="grid-item day-name">Thu</div>
-                    <div class="grid-item day-name">Fri</div>
-                    <div class="grid-item day-name">Sat</div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"><span class="day">Morning</span><br><span class="time">06:00-12:00</span>
-                    </div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"><span class="day">Afternoon</span><br><span class="time">12:00-18:00</span>
-                    </div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item"><span class="day">Evening</span><br><span class="time">18:00-20:00</span>
-                    </div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"></div>
-                    <div class="grid-item"><span class="day">Night</span><br><span class="time">00:00-16:00</span></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                    <div class="grid-item tick"><img class="tick-img" src="assets/images/images/tick-mark.svg" alt=""></div>
-                </div>
-
-                <button class="schedule-btn">View full schedule</button>
-            </div>
-        </div>
-
-    </section>
 
 
 
-    <!---------------------------
-     pagination part end 
------------------------------>
-
-    <section class="testimonial-sec">
-        <div class="t-right-div">
-            <h1 class="testi-h1">Student Testimonials</h1>
-            <div class="swiper mySwiper swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p class="testi-p">In my experience all the teachers are very <br> supportive and friendly,
-                            and the
-                            placement <br>
-                            process has been very smooth. It's also no <br> issue to talk about whatever you want
-                            to.</p>
-                        <h6 class="testi-h6">Sherina Munir - Designer</h6>
-                        <h2 class="hide-h6">nfeeafnknnnaf</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="testi-p">As an actor, I found the school's atmosphere <br> incredibly welcoming.
-                            The teachers'
-                            support <br>
-                            and the smooth placement process made <br> it easy to focus on my craft.
-                        </p>
-                        <h6 class="testi-h6">Henry Cavill - Actor</h6>
-                        <h2 class="hide-h6">nfeeafnknnnaf</h2>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="testi-p">As Writer, I found the school's atmosphere <br> incredibly welcoming. The
-                            teachers'
-                            support <br>
-                            and the smooth placement process made <br> it easy to focus on my craft.</p>
-                        <h6 class="testi-h6">Jhon doe - Writer</h6>
-                        <h2 class="hide-h6">nfeeafnknnnaf</h2>
-                    </div>
-                </div>
-                <div class="swiper-pagination page"></div>
-            </div>
-
-        </div>
-        <div class="left-div">
-            <img class="testim-img" src="assets/images/images/testimonial-img.png" alt="">
-        </div>
-    </section>
-
-
-    <!----------------------------------- 
-corporate language training section 
-------------------------------------->
-
-    <section class="corparate-sec">
-        <div class="c-left-div">
-            <img src="assets/images/images/corporate.png" alt="">
-        </div>
-        <div class="c-right-div">
-            <h1>Corporate language training <br> for business</h1>
-            <p>ProTutor corporate training is designed for teams and <br> businesses offering personalized language
-                learning with <br> online tutors. Book a demo to learn more. <br>
-                Want your employer to pay for your lessons? Refer your company!</p>
-            <div>
-                <button class="btn-started">Join as a Tutor</button>
-                <button class="btn-started">Join as a Student</button>
-            </div>
-        </div>
-    </section>
-
-    <!----------------------------------- 
-corporate language training section 
-------------------------------------->
-
-    <!----------------------------------- 
-FAQ section start
-------------------------------------->
-    <section class="faq-sec">
-        <h2>Find an Online English Teacher to Help You Master English</h2>
-        <div class="faq">
-            <div class="question">
-                <h3>Is there a free trial available?</h3>
-                <img class="plus" src="assets/images/images/faq.svg" alt="">
-
-            </div>
-            <div class="answer">
-                <p>
-                    Live tutoring software enables tutors to teach students in real time utilizing interactive video
-                    conferencing features. As a Student or Parent, you can browse through Tutor profiles and their
-                    subject expertise, and hereafter book live lesson.
-                </p>
-            </div>
-        </div>
-        <div class="faq">
-            <hr>
-            <div class="question">
-                <h3>Can I change my plan later?</h3>
-                <img class="plus" src="assets/images/images/faq.svg" alt="">
-
-            </div>
-            <div class="answer">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam beatae, minus quasi
-                    repellendus consequuntur sapiente odit velit neque eos saepe dignissimos cupiditate magnam pariatur
-                    qui cumque nisi quae maxime aperiam nam nulla ad ipsum cum veritatis! Molestiae, odio dolorum!
-                </p>
-            </div>
-        </div>
-        <div class="faq">
-            <hr>
-            <div class="question">
-                <h3>What is your cancellation policy?</h3>
-                <img class="plus" src="assets/images/images/faq.svg" alt="">
-
-            </div>
-            <div class="answer">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam beatae, minus quasi
-                    repellendus consequuntur sapiente odit velit neque eos saepe dignissimos cupiditate magnam pariatur
-                    qui cumque nisi quae maxime aperiam nam nulla ad ipsum cum veritatis! Molestiae, odio dolorum!
-                </p>
-            </div>
-        </div>
-        <div class="faq">
-            <hr>
-            <div class="question">
-                <h3>Can other info be added to an invoice?</h3>
-                <img class="plus" src="assets/images/images/faq.svg" alt="">
-
-            </div>
-            <div class="answer">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam beatae, minus quasi
-                    repellendus consequuntur sapiente odit velit neque eos saepe dignissimos cupiditate magnam pariatur
-                    qui cumque nisi quae maxime aperiam nam nulla ad ipsum cum veritatis! Molestiae, odio dolorum!
-                </p>
-            </div>
-        </div>
-        <div class="faq">
-            <hr>
-            <div class="question">
-                <h3>How does billing work?</h3>
-                <img class="plus" src="assets/images/images/faq.svg" alt="">
-
-            </div>
-            <div class="answer">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquam beatae, minus quasi
-                    repellendus consequuntur sapiente odit velit neque eos saepe dignissimos cupiditate magnam pariatur
-                    qui cumque nisi quae maxime aperiam nam nulla ad ipsum cum veritatis! Molestiae, odio dolorum!
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!----------------------------------- 
-FAQ section end
-------------------------------------->
-
-    <!----------------------------------- 
-Footer section start
-------------------------------------->
 
 
 
-    <!----------------------------------- 
-Footer section end
-------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
-    "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
 
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active-tab";
+        }
+        document.getElementById("defaultOpen").click();
+
+    </script>
+    <script>
+        function resume(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent2, tablinks2;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent2 = document.getElementsByClassName("resumetabcontent");
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks2 = document.getElementsByClassName("resumetablinks");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen2").click();
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                margin: 10,
+                loop: true,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    767: {
+                        items: 2,
+                    },
+                    991: {
+                        items: 3,
+                    },
+                    1300: {
+                        items: 4,
+
+                    }
+                }
+
+            });
+        });
+
+    </script>
 </body>
-
 
 </html>
