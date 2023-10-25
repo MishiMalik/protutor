@@ -114,7 +114,17 @@ faqs.forEach((faq) => {
 });
   // jQuery code
   $(document).ready(function () {
-    $(".like").click(function () {
-        $(".like-fill").toggleClass("liked");
+    $(".teacher-card-div").each(function () {
+        // Find the "like" button within the current teacher card
+        var $likeButton = $(this).find(".like");
+        
+        // Add a click event listener to the found "like" button
+        $likeButton.click(function () {
+            // Find the corresponding ".like-fill" element within the current teacher card
+            var $likeFill = $(this).closest(".teacher-card-div").find(".like-fill");
+            
+            // Toggle the "liked" class for the targeted ".like-fill" element
+            $likeFill.toggleClass("liked");
+        });
     });
 });
