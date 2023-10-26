@@ -24,6 +24,9 @@
     font-weight: 600;
     line-height: 110%;
   }
+  .filter-btn-div{
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width:1240px){
   .teacher-card--header-text{
@@ -41,6 +44,9 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+  .filter-btn-div{
+    margin-top: 0px;
+  }
   .filter-search .dropdown{
     display: flex;
     flex-grow: 1;

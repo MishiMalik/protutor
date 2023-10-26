@@ -2593,3 +2593,7 @@ line-height: 32px;
   align-items: center;
   border-radius: 100px;
 }
+.select-section{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
